@@ -13,6 +13,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     var id: Int // required by the Identifiable protocol
     var name: String
     var park: String
+    var city: String
     var state: String
     var description: String
 

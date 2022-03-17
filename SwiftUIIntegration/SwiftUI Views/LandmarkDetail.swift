@@ -24,7 +24,7 @@ struct LandmarkDetail: View {
                     .font(.title)
                     .foregroundColor(.black)
                 HStack {
-                    Text(landmark.name)
+                    Text(landmark.city)
                     Spacer()
                     Text(landmark.state)
                 }

@@ -5,7 +5,6 @@
 //  Created by fmustafa on 3/5/22.
 //
 
-import UIKit
 import SwiftUI
 
 // https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
@@ -20,7 +19,6 @@ class ViewController: UIViewController {
     }
 
     func setConstraints() {
-
         let swiftUIView = contentView.view!
 
         swiftUIView.translatesAutoresizingMaskIntoConstraints = false
@@ -29,7 +27,5 @@ class ViewController: UIViewController {
         swiftUIView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
         swiftUIView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
     }
-
-
 }
 

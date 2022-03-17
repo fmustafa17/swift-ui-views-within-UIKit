@@ -23,6 +23,7 @@ struct CircleImage: View {
 
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
+        // the detail view, which instantiates a circle image, needs an input parameter as wel
         CircleImage(image: Image("turtlerock"))
     }
 }

@@ -19,11 +19,22 @@ struct LandmarkList: View {
     var body: some View {
         NavigationView {
             // Lists work with identifiable data. You can make your data identifiable in one of two ways: by passing along with your data a key path to a property that uniquely identifies each element, or by making your data type conform to the Identifiable protocol.
-            List(filteredLandmarks) { landmark in
-                NavigationLink {
-                    LandmarkDetail(landmark: landmark)
-                } label: {
-                    LandmarkRow(landmark: landmark)
+            List {
+                // pass a binding to a toggle control
+                // A binding acts as a reference to a mutable state.
+                // When a user taps the toggle from off to on, and off again, the control uses the binding to update the view’s state accordingly.
+                Toggle(isOn: $showFavoritesOnly) {
+                    Text("Show Favorites Only")
+                }
+                
+                // To combine static and dynamic views in a list, or to combine two or more different groups of dynamic views, use the ForEach type instead of passing your collection of data to List.
+                ForEach(filteredLandmarks) {
+                    landmark in
+                    NavigationLink {
+                        LandmarkDetail(landmark: landmark)
+                    } label: {
+                        LandmarkRow(landmark: landmark)
+                    }
                 }
             }
             .navigationTitle("Landmarks")
@@ -33,11 +44,6 @@ struct LandmarkList: View {
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-//        ForEach(["iPhone SE (2nd generation)", "iPhone 11"], id: \.self) { deviceName in
-//            LandmarkList()
-//                .previewDevice(PreviewDevice(rawValue: deviceName))
-//                .previewDisplayName(deviceName)
-//        }
         LandmarkList()
     }
 }

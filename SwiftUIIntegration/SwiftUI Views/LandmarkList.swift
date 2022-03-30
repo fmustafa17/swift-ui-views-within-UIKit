@@ -33,7 +33,9 @@ struct LandmarkList: View {
                 ForEach(filteredLandmarks) {
                     landmark in
                     NavigationLink {
-                        LandmarkDetail(landmark: landmark)
+                        // to pass in modelData from this view to the LandmarkDetail view, we need to wrap it by prefixing an underscore
+                        // xcode gives an error 'Cannot convert value 'modelData' of type 'ModelData' to expected type 'EnvironmentObject<ModelData>', use wrapper instead'
+                        LandmarkDetail(modelData: _modelData, landmark: landmark)
                     } label: {
                         LandmarkRow(landmark: landmark)
                     }

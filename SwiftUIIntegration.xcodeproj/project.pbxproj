@@ -60,13 +60,11 @@
 		ADBF210627E178E900E25E8F /* SwiftUI Views */ = {
 			isa = PBXGroup;
 			children = (
+				D86124BA27F3FCF600105D2F /* Helpers */,
 				ADC1491127D43A2300ED0505 /* SwiftUIContentView.swift */,
-				ADBF210227E1762E00E25E8F /* CircleImage.swift */,
-				ADBF210427E1777600E25E8F /* MapView.swift */,
 				ADBF210E27E281DC00E25E8F /* LandmarkRow.swift */,
 				ADBF211027E2C0BA00E25E8F /* LandmarkList.swift */,
 				ADBF211227E2C44400E25E8F /* LandmarkDetail.swift */,
-				D86124B827F3FC7500105D2F /* FavoriteButton.swift */,
 			);
 			path = "SwiftUI Views";
 			sourceTree = "<group>";
@@ -111,6 +109,16 @@
 				ADC1490B27D4383900ED0505 /* Info.plist */,
 			);
 			path = SwiftUIIntegration;
+			sourceTree = "<group>";
+		};
+		D86124BA27F3FCF600105D2F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ADBF210427E1777600E25E8F /* MapView.swift */,
+				ADBF210227E1762E00E25E8F /* CircleImage.swift */,
+				D86124B827F3FC7500105D2F /* FavoriteButton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

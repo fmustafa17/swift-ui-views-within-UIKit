@@ -22,6 +22,7 @@
 		ADC1490727D4383900ED0505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC1490627D4383900ED0505 /* Assets.xcassets */; };
 		ADC1490A27D4383900ED0505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC1490827D4383900ED0505 /* LaunchScreen.storyboard */; };
 		ADC1491227D43A2300ED0505 /* SwiftUIContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC1491127D43A2300ED0505 /* SwiftUIContentView.swift */; };
+		D86124B927F3FC7500105D2F /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86124B827F3FC7500105D2F /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		ADC1490927D4383900ED0505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADC1490B27D4383900ED0505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADC1491127D43A2300ED0505 /* SwiftUIContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIContentView.swift; sourceTree = "<group>"; };
+		D86124B827F3FC7500105D2F /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				ADBF210E27E281DC00E25E8F /* LandmarkRow.swift */,
 				ADBF211027E2C0BA00E25E8F /* LandmarkList.swift */,
 				ADBF211227E2C44400E25E8F /* LandmarkDetail.swift */,
+				D86124B827F3FC7500105D2F /* FavoriteButton.swift */,
 			);
 			path = "SwiftUI Views";
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				ADBF210927E27B9600E25E8F /* Landmark.swift in Sources */,
 				ADC1490227D4383800ED0505 /* ViewController.swift in Sources */,
 				ADBF210527E1777600E25E8F /* MapView.swift in Sources */,
+				D86124B927F3FC7500105D2F /* FavoriteButton.swift in Sources */,
 				ADC148FE27D4383800ED0505 /* AppDelegate.swift in Sources */,
 				ADC1491227D43A2300ED0505 /* SwiftUIContentView.swift in Sources */,
 				ADBF210D27E2815D00E25E8F /* ModelData.swift in Sources */,
